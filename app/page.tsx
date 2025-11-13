@@ -14,8 +14,8 @@ export default function Page() {
       <main className="relative pt-32">
         <Hero />
         <Solution />
-        <Trends />
         <Features />
+        <Trends />
         <UseCase />
         <ContactDemo />
         <Footer />

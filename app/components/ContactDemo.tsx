@@ -197,13 +197,13 @@ export default function ContactDemo() {
             <button
               type="submit"
               disabled={state === "loading"}
-              className="inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#6EE7F2] text-black font-medium disabled:opacity-60"
+              className="inline-flex items-center gap-2 rounded-xl px-5 py-3 bg-gradient-to-r from-[#8B5CF6] to-[#6EE7F2] text-black font-medium disabled:opacity-60 cursor-pointer"
             >
               {state === "loading" ? "Senden…" : "Demo anfragen"}
             </button>
             <button
               type="reset"
-              className="rounded-xl px-5 py-3 border border-white/15 text-white/80 hover:bg-white/10"
+              className="rounded-xl px-5 py-3 border border-white/15 text-white/80 hover:bg-white/10 cursor-pointer"
               onClick={() => { setError(""); setState("idle"); }}
             >
               Zurücksetzen

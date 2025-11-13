@@ -6,11 +6,10 @@ import { Button } from './ui';
 
 const navLinks = [
   { label: 'API Hub', href: '#solution' },
-  { label: 'Security', href: '#trends' },
   { label: 'Agents', href: '#features' },
+  { label: 'Security', href: '#trends' },
   { label: 'Use Case', href: '#usecase' },
   { label: 'Kontakt', href: '#contact' },
-  { label: 'Dokumentation', href: '#contact' }
 ];
 
 export default function Navbar() {
