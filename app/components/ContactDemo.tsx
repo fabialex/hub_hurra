@@ -76,7 +76,7 @@ export default function ContactDemo() {
           Demo anfragen
         </h2>
         <p className="mt-3 text-white/70">
-          Sag uns kurz, wer du bist und wofür du Hub Hub Hurra testen willst.
+          Wir erklären dir gerne wie unser API Hub dein nächstes Integrationsprojekt beschleunigen kann.
         </p>
 
         {/* Glas-Card mit Blur */}
@@ -136,11 +136,17 @@ export default function ContactDemo() {
 
           <div className="mt-4 flex flex-col gap-2">
             <label className="text-sm text-white/80">Use Case</label>
-            <input
-              name="useCase"
-              placeholder="z. B. Partner-API-Katalog, Agenten-Integration, Governance…"
-              className="h-11 rounded-xl bg-black/30 border border-white/15 px-3 text-white placeholder:text-white/40 outline-none focus:border-white/40"
-            />
+              <select
+                name="teamSize"
+                className="h-11 rounded-xl bg-black/30 border border-white/15 px-3 text-white outline-none focus:border-white/40"
+                defaultValue=""
+              >
+                <option value="" disabled>Bitte auswählen</option>
+                <option value="1-10">Meine Kunden oder Partner möchten sich mit meinen Systemem verbinden</option>
+                <option value="11-50">Ich möchte meine AI-Agents mit den richtigen Daten versorgen</option>
+                <option value="51-250">Ich haben den Überblick über meine Schnittstellen verloren</option>
+                <option value="250+">Alles oder etwas ganz anderes</option>
+              </select>
           </div>
 
           <div className="mt-4 flex flex-col gap-2">
@@ -163,7 +169,7 @@ export default function ContactDemo() {
             />
             <label htmlFor="consent" className="text-sm text-white/70">
               Ich bin mit der Verarbeitung meiner Daten zur Kontaktaufnahme einverstanden.
-              <a href="/datenschutz" className="underline decoration-white/40 hover:text-white ml-1">
+              <a href="https://pragmaticindustries.com/datenschutzerklaerung.html" target="_blank" className="underline decoration-white/40 hover:text-white ml-1">
                 Datenschutz
               </a>
             </label>

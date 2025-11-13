@@ -29,9 +29,11 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-sm text-white/60 leading-relaxed">
-            Von 6 Monaten zu 6 Minuten – APIs industrialisieren und Innovation beschleunigen.
-            Eine Plattform für standardisierte Integrationen im B2B Umfeld.
+            Ihr Partner für nahtlose Industrie-System
+            Integrationen. Entdecken Sie, wie unser API-Hub Ihre digitale
+            Transformation beschleunigen kann.
           </p>
+          <p className="text-sm text-white/60 leading-relaxed italic">Hub Hub Hurra ist eine Marke der pragmatic industries GmbH</p>
         </div>
 
         {/* Linkbereiche */}
@@ -40,18 +42,15 @@ export default function Footer() {
             <span className="text-white/70 font-medium uppercase tracking-wider text-xs">
               Unternehmen
             </span>
-            <a href="#" className="hover:text-white transition">Über uns</a>
-            <a href="#" className="hover:text-white transition">Karriere</a>
-            <a href="#" className="hover:text-white transition">Presse</a>
+            <a href="https://pragmaticindustries.com/#wir" target="_blank" className="hover:text-white transition">Über uns</a>
           </div>
 
           <div className="flex flex-col gap-2">
             <span className="text-white/70 font-medium uppercase tracking-wider text-xs">
               Rechtliches
             </span>
-            <a href="#" className="hover:text-white transition">Impressum</a>
-            <a href="#" className="hover:text-white transition">Datenschutz</a>
-            <a href="#" className="hover:text-white transition">AGB</a>
+            <a href="/impressum" className="hover:text-white transition">Impressum</a>
+            <a href="https://pragmaticindustries.com/datenschutzerklaerung.html" target="_blank" className="hover:text-white transition">Datenschutz</a>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -59,10 +58,8 @@ export default function Footer() {
               Kontakt
             </span>
             <a href="mailto:info@hubhubhurra.de" className="hover:text-white transition">
-              hallo@hubhubhurra.de
+              hello@hub-hub-hurra.de
             </a>
-            <a href="#" className="hover:text-white transition">LinkedIn</a>
-            <a href="#" className="hover:text-white transition">GitHub</a>
           </div>
         </div>
       </div>

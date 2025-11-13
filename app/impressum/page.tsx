@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
+import { PageBackground } from '../components/ui';
 
 export const metadata: Metadata = {
   title: 'Impressum | Hub Hub Hurra',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ImpressumPage() {
   return (
-    <>
+    <PageBackground>
       <Navbar />
       <main className="relative pt-32">
         <Section className="pt-10">
@@ -119,6 +120,6 @@ export default function ImpressumPage() {
         </Section>
         <Footer />
       </main>
-    </>
+    </PageBackground>
   );
 }

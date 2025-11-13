@@ -1,16 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import Section from './Section';
-import { ReactFlowProvider } from '@xyflow/react';
-import { FlowCanvas, useFlowSharedState } from './FlowShared';
 import { Button } from './ui';
 
 export default function Hero() {
-  const { nodes, edges, onNodesChange, onEdgesChange, onConnect } = useFlowSharedState();
 
   return (
     <Section>
-      <div className="relative min-h-[80vh] pt-10 md:pt-16 grid md:grid-cols-12 gap-10 items-center overflow-hidden">
+      <div className="relative min-h-[65vh] pt-8 md:pt-12 grid md:grid-cols-12 gap-8 items-center overflow-hidden">
         <div className="md:col-span-6 relative z-10 px-4 md:px-6">
           <div
             aria-hidden
@@ -18,9 +16,9 @@ export default function Hero() {
           />
           <div className="relative z-10 md:-mr-10">
             <div className="kicker">Industrie-System Integrationen</div>
-            <h1 className="h1 mt-3 text-4xl md:text-5xl lg:text-6xl font-bold">Von 6 Monaten zu 6 Minuten.</h1>
+            <h1 className="h1 mt-3 text-4xl md:text-5xl lg:text-6xl font-bold">UNFUCK INTEGRATIONS.</h1>
             <p className="lede mt-5 text-lg md:text-xl text-neutral-300">
-              Verbinden Sie kinderleicht ihre Systeme mit dem API-Hub. Eine kontrollierte Schicht zwischen Innovation und Sicherheit – APIs als Produkt, nicht als Projekt. Im Ernst: Probieren Sie es live aus.
+              Erstelle und verwalte APIs zwischen den großen Systemen wie SAP order Salesforce in Minuten statt in Monaten und teile sie mit allen die sie brauchen - Kunden, Partner oder AI-Agents.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-3">
               <Button as="a" href="#contact" className="px-6 py-3 text-center" variant='primary'>
@@ -32,23 +30,15 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="md:col-span-6 relative hidden md:block">
-          <div className="relative h-[600px] w-full overflow-hidden rounded-l-2xl bg-neutral-950/50 backdrop-blur-sm">
-            <div className="absolute inset-0">
-              <ReactFlowProvider>
-                <FlowCanvas
-                  nodes={nodes}
-                  edges={edges}
-                  onNodesChange={onNodesChange}
-                  onEdgesChange={onEdgesChange}
-                  onConnect={onConnect}
-                  interactive={true}
-                  fit={true}
-                  fitPadding={0.2}
-                />
-              </ReactFlowProvider>
-            </div>
-          </div>
+        <div className="md:col-span-6 relative hidden md:flex items-center justify-center">
+          <Image
+            src="/HubCity.png"
+            alt="Visualisierung des Hub Hub Hurra API-Hubs"
+            width={880}
+            height={600}
+            className="w-full max-w-[520px] h-auto rounded-l-2xl object-contain"
+            priority
+          />
         </div>
       </div>
     </Section>

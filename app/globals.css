@@ -103,6 +103,40 @@ body {
   box-shadow: 0 45px 110px rgba(3, 7, 18, 0.75);
 }
 
+.page-shell__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.page-shell__spark {
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.page-shell__spark--left {
+  top: -220px;
+  left: -180px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.24), transparent 70%);
+}
+
+.page-shell__spark--right {
+  bottom: -160px;
+  right: -200px;
+  background: radial-gradient(circle, rgba(54, 167, 223, 0.24), transparent 70%);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
