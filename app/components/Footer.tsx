@@ -1,0 +1,76 @@
+import Image from "next/image";
+
+export default function Footer() {
+  return (
+    <footer className="relative mt-32 border-t border-white/10 bg-white/5 backdrop-blur-md">
+      {/* Glow-Effekt im Hintergrund */}
+      <div
+        aria-hidden
+        className="absolute inset-x-0 -top-40 h-80 w-full pointer-events-none blur-3xl"
+        style={{
+          background:
+            "radial-gradient(circle at 70% 0%, rgba(139,92,246,0.15), transparent 70%)",
+        }}
+      />
+
+      <div className="relative mx-auto max-w-6xl px-4 py-16 flex flex-col md:flex-row md:justify-between md:items-start gap-10 text-white/80">
+        {/* Logo + kurze Description */}
+        <div className="flex flex-col gap-4 max-w-sm">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/Hub_Hub_Logo.png"
+              alt="Hub Hub Hurra Logo"
+              width={36}
+              height={36}
+              className="rounded"
+            />
+            <span className="text-lg font-semibold tracking-wide text-white">
+              Hub Hub Hurra
+            </span>
+          </div>
+          <p className="text-sm text-white/60 leading-relaxed">
+            Von 6 Monaten zu 6 Minuten – APIs industrialisieren und Innovation beschleunigen.
+            Eine Plattform für standardisierte Integrationen im B2B Umfeld.
+          </p>
+        </div>
+
+        {/* Linkbereiche */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 md:gap-16 text-sm">
+          <div className="flex flex-col gap-2">
+            <span className="text-white/70 font-medium uppercase tracking-wider text-xs">
+              Unternehmen
+            </span>
+            <a href="#" className="hover:text-white transition">Über uns</a>
+            <a href="#" className="hover:text-white transition">Karriere</a>
+            <a href="#" className="hover:text-white transition">Presse</a>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <span className="text-white/70 font-medium uppercase tracking-wider text-xs">
+              Rechtliches
+            </span>
+            <a href="#" className="hover:text-white transition">Impressum</a>
+            <a href="#" className="hover:text-white transition">Datenschutz</a>
+            <a href="#" className="hover:text-white transition">AGB</a>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <span className="text-white/70 font-medium uppercase tracking-wider text-xs">
+              Kontakt
+            </span>
+            <a href="mailto:info@hubhubhurra.de" className="hover:text-white transition">
+              hallo@hubhubhurra.de
+            </a>
+            <a href="#" className="hover:text-white transition">LinkedIn</a>
+            <a href="#" className="hover:text-white transition">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom line */}
+      <div className="border-t border-white/10 text-center text-xs text-white/50 py-6">
+        © 2025 Hub Hub Hurra · All rights reserved.
+      </div>
+    </footer>
+  );
+}
