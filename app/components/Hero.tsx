@@ -24,7 +24,7 @@ export default function Hero() {
               <Button as="a" href="#contact" className="px-6 py-3 text-center" variant='primary'>
                 Demo anfragen
               </Button>
-              <Button as="b" href="#contact" className="px-6 py-3 text-center" variant='default'>
+              <Button as="a" href="#contact" className="px-6 py-3 text-center" variant='default'>
                 Dokumentation
               </Button>
             </div>
